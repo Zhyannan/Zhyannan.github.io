@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-10T03:47:45.107Z</updated>
+  <updated>2018-07-10T08:35:23.736Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,200 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jquery-01</title>
+    <link href="http://yoursite.com/2018/08/02/2016-8-2-Jquery-01/"/>
+    <id>http://yoursite.com/2018/08/02/2016-8-2-Jquery-01/</id>
+    <published>2018-08-02T12:30:00.000Z</published>
+    <updated>2018-07-10T08:35:23.736Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一-jquery介绍&quot;&gt;&lt;a href=&quot;#一-jquery介绍&quot; class=&quot;headerlink&quot; title=&quot;一. jquery介绍&quot;&gt;&lt;/a&gt;一. jquery介绍&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;jQuery 是目前使用最广泛的 javascript 函数库。据统计，全世界排名前100万的网站，有46%使用 jQuery，远远超过其他库。微软公司甚至把 jQuery 作为他们的官方库。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;jQuery的版本分为1.x系列和2.x、3.x系列，1.x系列兼容低版本的浏览器，2.x、3.x系列放弃支持低版本浏览器，目前使用最多的是1.x系列的。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="jquery" scheme="http://yoursite.com/tags/jquery/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript-02</title>
+    <link href="http://yoursite.com/2018/07/26/2016-7-26-JavaScript-02/"/>
+    <id>http://yoursite.com/2018/07/26/2016-7-26-JavaScript-02/</id>
+    <published>2018-07-26T12:19:07.000Z</published>
+    <updated>2018-07-10T08:29:48.758Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一-JS-高级&quot;&gt;&lt;a href=&quot;#一-JS-高级&quot; class=&quot;headerlink&quot; title=&quot;一 .  JS 高级&quot;&gt;&lt;/a&gt;一 .  JS 高级&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;介绍 javascript 数组和字符串的操作方法、循环语句、定时器的使用及实例、变量作用域、封闭函数的使用场景。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+      <category term="javascript高级" scheme="http://yoursite.com/tags/javascript%E9%AB%98%E7%BA%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript-01</title>
+    <link href="http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/"/>
+    <id>http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/</id>
+    <published>2018-07-25T04:19:22.000Z</published>
+    <updated>2018-07-10T08:18:51.610Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;JavaScript-介绍&quot;&gt;&lt;a href=&quot;#JavaScript-介绍&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 介绍&quot;&gt;&lt;/a&gt;JavaScript 介绍&lt;/h1&gt;&lt;p&gt;JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="javascript" scheme="http://yoursite.com/tags/javascript/"/>
+    
+      <category term="js" scheme="http://yoursite.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css定位</title>
+    <link href="http://yoursite.com/2018/07/23/2016-7-23-css%E5%AE%9A%E4%BD%8D/"/>
+    <id>http://yoursite.com/2018/07/23/2016-7-23-css定位/</id>
+    <published>2018-07-23T14:05:57.000Z</published>
+    <updated>2018-07-10T08:17:09.592Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一-定位&quot;&gt;&lt;a href=&quot;#一-定位&quot; class=&quot;headerlink&quot; title=&quot;一. 定位&quot;&gt;&lt;/a&gt;一. 定位&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;把某一个标签,  安置到某一个位置去,  这个过程称为定位.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;1-文档流概念&quot;&gt;&lt;a href=&quot;#1-文档流概念&quot; class=&quot;headerlink&quot; title=&quot;1.  文档流概念&quot;&gt;&lt;/a&gt;1.  文档流概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;文档流，是指盒子按照 HTML 标签编写的顺序依次从上到下，从左到右排列，块元素占一行，行内元素在一行之内从左到右排列，先写的先排列，后写的排在后面，每个盒子都占据自己的位置。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="position" scheme="http://yoursite.com/tags/position/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css属性进阶</title>
+    <link href="http://yoursite.com/2018/07/22/2016-7-23-css%E5%B1%9E%E6%80%A7%E8%BF%9B%E9%98%B6/"/>
+    <id>http://yoursite.com/2018/07/22/2016-7-23-css属性进阶/</id>
+    <published>2018-07-22T08:01:04.000Z</published>
+    <updated>2018-07-10T08:17:41.403Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CSS属性进阶&quot;&gt;&lt;a href=&quot;#CSS属性进阶&quot; class=&quot;headerlink&quot; title=&quot;CSS属性进阶&quot;&gt;&lt;/a&gt;CSS属性进阶&lt;/h1&gt;&lt;h2 id=&quot;1-文本常用样式属性进阶：&quot;&gt;&lt;a href=&quot;#1-文本常用样式属性进阶：&quot; class=&quot;headerlink&quot; title=&quot;1.文本常用样式属性进阶：&quot;&gt;&lt;/a&gt;1.文本常用样式属性进阶：&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;text-align 设置文字水平对齐方式，如text-align:center 设置文字水平居中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;text-indent 设置文字首行缩进，如：text-indent:32px; 设置文字首行缩进32px&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="css属性进阶" scheme="http://yoursite.com/tags/css%E5%B1%9E%E6%80%A7%E8%BF%9B%E9%98%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML列表&amp;表单&amp;表格</title>
+    <link href="http://yoursite.com/2018/07/22/2016-7-22-HTML%E5%88%97%E8%A1%A8-%E8%A1%A8%E5%8D%95-%E8%A1%A8%E6%A0%BC/"/>
+    <id>http://yoursite.com/2018/07/22/2016-7-22-HTML列表-表单-表格/</id>
+    <published>2018-07-22T07:54:35.000Z</published>
+    <updated>2018-07-10T07:59:53.428Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一-列表-标签&quot;&gt;&lt;a href=&quot;#一-列表-标签&quot; class=&quot;headerlink&quot; title=&quot;一. 列表 标签&quot;&gt;&lt;/a&gt;一. 列表 标签&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;前端中列表分为两种:   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有序列表&lt;/li&gt;
+&lt;li&gt;无序列表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="html" scheme="http://yoursite.com/tags/html/"/>
+    
+      <category term="csss" scheme="http://yoursite.com/tags/csss/"/>
+    
+      <category term="li、form、table标签" scheme="http://yoursite.com/tags/li%E3%80%81form%E3%80%81table%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS盒子模型</title>
+    <link href="http://yoursite.com/2018/07/10/2016-7-21-CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/</id>
+    <published>2018-07-10T07:43:52.000Z</published>
+    <updated>2018-07-10T07:53:07.933Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;1-CSS–内外边距&quot;&gt;&lt;a href=&quot;#1-CSS–内外边距&quot; class=&quot;headerlink&quot; title=&quot;1.CSS–内外边距&quot;&gt;&lt;/a&gt;1.CSS–内外边距&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;padding:  用于控制内容与边框之间的距离&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border(边框):   围绕在内边距和内容外的边框&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;content(内容):  盒子的内容, 显示文本和图像.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="css" scheme="http://yoursite.com/tags/css/"/>
+    
+      <category term="盒子模型" scheme="http://yoursite.com/tags/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS-进阶</title>

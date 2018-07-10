@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="html,css,javascript,js," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Zhyannan's blogs" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="JavaScript 介绍JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。">
+<meta name="keywords" content="html,css,javascript,js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript-01">
+<meta property="og:url" content="http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/index.html">
+<meta property="og:site_name" content="Zhyannan&#39;s blogs">
+<meta property="og:description" content="JavaScript 介绍JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-10T08:18:51.610Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript-01">
+<meta name="twitter:description" content="JavaScript 介绍JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/"/>
+
+
+
+
+
+  <title>JavaScript-01 | Zhyannan's blogs</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-right page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zhyannan's blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhyannan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhyannan's blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">JavaScript-01</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-25T12:19:22+08:00">
+                2018-07-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,635
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  11
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="JavaScript-介绍"><a href="#JavaScript-介绍" class="headerlink" title="JavaScript 介绍"></a>JavaScript 介绍</h1><p>JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。</p>
+<a id="more"></a>
+<p><strong>前端三大块</strong><br>1、HTML：页面结构<br>2、CSS：页面表现：元素大小、颜色、位置、隐藏或显示、部分动画效果<br>3、JavaScript：页面行为：部分动画效果、页面与用户的交互、页面功能</p>
+<h2 id="1-HTML-引入-JavaScript-的方式"><a href="#1-HTML-引入-JavaScript-的方式" class="headerlink" title="1. HTML 引入 JavaScript 的方式"></a>1. HTML 引入 JavaScript 的方式</h2><p>1、行间事件（主要用于事件）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=&quot;button&quot; name=&quot;&quot; onclick=&quot;alert(&apos;ok！&apos;);&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>2、页面script标签嵌入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;        </span><br><span class="line">    alert(&apos;ok！&apos;);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>3、外部引入2</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;js/index.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="2-变量、数据类型及基本语法规范"><a href="#2-变量、数据类型及基本语法规范" class="headerlink" title="2. 变量、数据类型及基本语法规范"></a>2. 变量、数据类型及基本语法规范</h2><p>JavaScript 是一种弱类型语言，javascript的变量类型由它的值来决定。 定义变量需要用关键字 ‘var’</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var iNum = 123</span><br><span class="line">var sTr = &apos;asd&apos;</span><br><span class="line"></span><br><span class="line">//同时定义多个变量可以用&quot;,&quot;隔开，公用一个‘var’关键字</span><br><span class="line">var iNum = 45, sTr=&apos;qwe&apos;, sCount=&apos;68&apos;;</span><br></pre></td></tr></table></figure>
+<p><strong>基本数据类型</strong></p>
+<p>5种基本数据类型：<br>1、number 数字类型<br>2、string    字符串类型<br>3、boolean 布尔类型 true 或 false<br>4、undefined undefined类型，变量声明未初始化，它的值就是undefined<br>5、null      null类型，表示空对象，如果定义的变量将来准备保存对象，可以将变量初始化为null,在页面上获取不到对象，返回的值就是null</p>
+<p>1种复合类型：  </p>
+<p>object</p>
+<p><strong>javascript语句与注释</strong></p>
+<p>1、javascript语句开始可缩进也可不缩进，缩进是为了方便代码阅读，一条javascript语句应该以“;”结尾;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;    </span><br><span class="line">    var iNum = 123;</span><br><span class="line">    var sTr = &apos;abc123&apos;;</span><br><span class="line">    function fnAlert()&#123;</span><br><span class="line">        alert(sTr);</span><br><span class="line">    &#125;;</span><br><span class="line">    fnAlert();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>2、javascript注释</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;    </span><br><span class="line">    // 单行注释</span><br><span class="line">    var iNum = 123;</span><br><span class="line">    </span><br><span class="line">    /*  </span><br><span class="line">        多行注释</span><br><span class="line">        1、...</span><br><span class="line">        2、...</span><br><span class="line">    */</span><br><span class="line">    var sTr = &apos;abc123&apos;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>变量、函数、属性、函数参数命名规范</strong></p>
+<p>1、区分大小写<br>2、第一个字符必须是字母、下划线（_）或者美元符号（$）<br>3、其他字符可以是字母、下划线、美元符或数字</p>
+<p><strong>匈牙利命名风格：</strong></p>
+<p>对象o Object 比如：oDiv<br>数组a Array 比如：aItems<br>字符串s String 比如：sUserName<br>整数i Integer 比如：iItemCount<br>布尔值b Boolean 比如：bIsComplete<br>浮点数f Float 比如：fPrice<br>函数fn Function 比如：fnHandler<br>正则表达式re RegExp 比如：reEmailCheck</p>
+<h2 id="3-函数"><a href="#3-函数" class="headerlink" title="3.函数"></a>3.函数</h2><blockquote>
+<p>函数就是重复执行的代码片段。</p>
+</blockquote>
+<h3 id="1-函数定义与执行"><a href="#1-函数定义与执行" class="headerlink" title="1. 函数定义与执行"></a>1. 函数定义与执行</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    // 函数定义</span></span><br><span class="line"><span class="undefined">    function fnAlert()&#123;</span></span><br><span class="line"><span class="undefined">	 alert('hello!');</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    // 函数执行</span></span><br><span class="line"><span class="undefined">    fnAlert();</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>变量 与 函数 预解析</strong> </p>
+<p>JavaScript 解析过程分为两个阶段，先是编译阶段，然后执行阶段，在编译阶段会将function定义的函数提前，并且将var定义</p>
+<p>的变量声明提前，将它赋值为 undefined。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined">    </span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="undefined">    fnAlert();       // 弹出 hello！</span></span><br><span class="line"><span class="undefined">  </span></span><br><span class="line"><span class="undefined">    function fnAlert()&#123;</span></span><br><span class="line"><span class="undefined">        alert('hello!');</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="undefined"></span></span><br><span class="line"><span class="undefined">	alert(iNum);  // 弹出 undefined</span></span><br><span class="line"><span class="undefined">    var iNum = 123;</span></span><br><span class="line"><span class="undefined">    </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-函数传参"><a href="#2-函数传参" class="headerlink" title="2. 函数传参"></a>2. 函数传参</h3><blockquote>
+<p>Javascript 的函数中可以传递参数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    function fnAlert(a)&#123;</span><br><span class="line">        alert(a);</span><br><span class="line">    &#125;</span><br><span class="line">    fnAlert(12345);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="3-函数的返回值"><a href="#3-函数的返回值" class="headerlink" title="3. 函数的返回值"></a>3. 函数的返回值</h3><blockquote>
+<p>JavaScript 中函数使用 return 返回内容</p>
+</blockquote>
+<blockquote>
+<p>函数中 ‘return’ 关键字的作用：</p>
+<ul>
+<li>返回函数中的值或者对象</li>
+<li>结束函数的运行</li>
+</ul>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    // 函数的定义</span></span><br><span class="line"><span class="undefined">    function addFunc(num1, num2)&#123;</span></span><br><span class="line"><span class="undefined">        var result = num1 + num2;</span></span><br><span class="line"><span class="undefined">        return result;</span></span><br><span class="line"><span class="undefined">        alert('here!');</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">	</span></span><br><span class="line"><span class="undefined">    // 函数的调用</span></span><br><span class="line"><span class="undefined">    var result = addFunc(3,4);</span></span><br><span class="line"><span class="undefined">    // 弹出7</span></span><br><span class="line"><span class="undefined">    alert(result);  </span></span><br><span class="line"><span class="undefined"> </span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-条件语句"><a href="#4-条件语句" class="headerlink" title="4. 条件语句"></a>4. 条件语句</h2><blockquote>
+<p>想要控制程序的走向，一般使用条件语句。</p>
+</blockquote>
+<h3 id="1-条件运算符和逻辑运算符"><a href="#1-条件运算符和逻辑运算符" class="headerlink" title="1) 条件运算符和逻辑运算符:"></a>1) 条件运算符和逻辑运算符:</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">条件运算符</th>
+<th>说明</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">==</td>
+<td>只要求值相等(在比较时会转换数据类型)</td>
+<td>“1”  ==  true      (结果为true)</td>
+</tr>
+<tr>
+<td style="text-align:left">===</td>
+<td>要求值和类型都相等</td>
+<td>“1” ===  true    (结果为false)</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;</td>
+<td>大于</td>
+<td>3  &gt; 5                  (结果为false)</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;</td>
+<td>小于</td>
+<td>3  &lt;  5                  (结果为true)</td>
+</tr>
+<tr>
+<td style="text-align:left">&gt;=</td>
+<td>大于等于</td>
+<td>3  &gt;= 5                 (结果为false)</td>
+</tr>
+<tr>
+<td style="text-align:left">&lt;=</td>
+<td>小于等于</td>
+<td>3  &lt;= 5                 (结果为true)</td>
+</tr>
+<tr>
+<td style="text-align:left">!=</td>
+<td>不等于</td>
+<td>3   !=  5                (结果为true)</td>
+</tr>
+<tr>
+<td style="text-align:left">&amp;&amp;(逻辑与)</td>
+<td>同真为真,一假则假</td>
+<td>x  &amp;&amp;   y              (同真为真,一假则假)</td>
+</tr>
+<tr>
+<td style="text-align:left">\</td>
+<td>\</td>
+<td>(逻辑或)</td>
+<td>全假为假, 一真则真</td>
+<td>x   \</td>
+<td>\</td>
+<td>y               (全假为假, 一真则真)</td>
+</tr>
+<tr>
+<td style="text-align:left">!     (逻辑非)</td>
+<td>非眞则假,非假则真   (取反)</td>
+<td>! x                         (非眞则假,非假则真)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-条件语句表达式"><a href="#2-条件语句表达式" class="headerlink" title="2)  条件语句表达式"></a>2)  条件语句表达式</h3><ul>
+<li><p>if 语句单独使用:                             </p>
+<blockquote>
+<p>使用时机:   满足一个条件时,进行处理, 其他情况不考虑的.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">使用格式: </span><br><span class="line"></span><br><span class="line">if (判断条件) &#123;</span><br><span class="line">    // 如果条件为 true, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>if…… else…. 语句: </p>
+<blockquote>
+<p>使用时机:   针对一个条件, 满足处理,  不满足也处理.    只针对一个条件, 互为互斥事件.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">使用格式: </span><br><span class="line"></span><br><span class="line">if (判断条件) &#123;</span><br><span class="line">    // 如果条件为 true, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    // 如果条件为 false, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>if….. else if ….. 语句</p>
+<blockquote>
+<p>使用时机:   针对不同的条件,  进行不同的处理.   需要注意是针对多个条件, 条件间没有必然联系</p>
+<p>注意:  else if   可以有无限个</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">使用格式: </span><br><span class="line"></span><br><span class="line">if (判断条件01) &#123;</span><br><span class="line">    // 如果第一个条件为 true, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125; else if (判断条件02) &#123;</span><br><span class="line">    // 如果第二个条件为 true, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>if…..  else if …… else…… 语句</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">使用格式: </span><br><span class="line"></span><br><span class="line">if (判断条件01) &#123;</span><br><span class="line">    // 如果第一个条件为 true, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125; else if (判断条件02) &#123;</span><br><span class="line">    // 如果第二个条件为 true, 进入这里执行</span><br><span class="line">    执行的语句01</span><br><span class="line">    ...</span><br><span class="line">&#125; else &#123;</span><br><span class="line">	// 如果上面两个条件都不满足, 进入这里执行</span><br><span class="line">	执行的语句01</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<p><strong>举例:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">var iNum01 = 3;</span><br><span class="line">var iNum02 = 5;</span><br><span class="line">var sTr;</span><br><span class="line">if ( iNum01 &gt; iNum02 )&#123;</span><br><span class="line">    sTr = &apos;大于&apos;;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    sTr = &apos;小于&apos;;</span><br><span class="line">&#125;</span><br><span class="line">alert(sTr);</span><br></pre></td></tr></table></figure>
+<p><strong>语句嵌套:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var a = 100</span><br><span class="line">if (a &gt; 10) &#123;</span><br><span class="line">    if (a &gt; 20) &#123;</span><br><span class="line">    	alert(&apos;大于20啦&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    alert(&apos;没有10大&apos;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-总结"><a href="#3-总结" class="headerlink" title="3)   总结:"></a>3)   总结:</h3><ul>
+<li><p>&amp;&amp;    (同真为真, 一假为假)</p>
+<p>​         <strong>True</strong>           &amp;&amp;     <strong>True</strong>                  ==&gt;        <strong>True</strong>     </p>
+<p>​            <code>False</code>    &amp;&amp;     <strong>True</strong>           ==&gt;       <code>False</code>    </p>
+<p>​           <strong>True</strong>           &amp;&amp;    <code>False</code>             ==&gt;           <code>False</code> </p>
+<p>​               <code>False</code>    &amp;&amp;    <code>False</code>             ==&gt;       <code>False</code></p>
+</li>
+<li><p>||       (全假为假, 一真则真)</p>
+<p>​          <strong>True</strong>               ||               <strong>True</strong>               ===&gt;        <strong>True</strong> </p>
+<p>​              <code>False</code>        ||               <strong>True</strong>               ===&gt;        <strong>True</strong> </p>
+<p>​               <strong>True</strong>               ||             <code>False</code>         ===&gt;        <strong>True</strong> </p>
+<p>​                 <code>False</code>       ||             <code>False</code>          ===&gt;      <code>False</code></p>
+</li>
+<li><p>!   (非,   取反)</p>
+<p>​         !       <strong>True</strong>            ===&gt;        <code>False</code></p>
+<p>​         !      <code>False</code>     ===&gt;          <strong>True</strong></p>
+</li>
+</ul>
+<h2 id="5-获取元素方法"><a href="#5-获取元素方法" class="headerlink" title="5. 获取元素方法"></a>5. 获取元素方法</h2><blockquote>
+<p>我们可以通过一些方法, 来获取 HTML 中的元素</p>
+</blockquote>
+<blockquote>
+<p>通过内置对象 document 的 getElementById 方法来获取页面上设置了id属性的元素</p>
+</blockquote>
+<blockquote>
+<p>获取到的是一个 html 对象，然后将它赋值给一个变量，比如：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">JS部分:</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    var oDiv = document.getElementById(&apos;div1&apos;);</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">HTML部分:</span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;这是一个div元素&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>注意: </strong>上面的语句，如果把 javascript 写在元素的上面，会获取不到当前的 HTML 元素:</p>
+<blockquote>
+<p>因为页面是从上往下加载执行的，javascript 从页面上获取元素 div1 的时候，元素 div1 还没有加载.</p>
+</blockquote>
+<p><strong>解决方法:</strong></p>
+<ul>
+<li><p>第一种方法：将 javascript 放到页面最下边</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;div1&quot;&gt;这是一个div元素&lt;/div&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">        var oDiv = document.getElementById(&apos;div1&apos;)</span><br><span class="line">        alert(oDiv)</span><br><span class="line">     &lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>第二种方法：将 javascript 语句放到 window.onload 触发的函数里面</p>
+<blockquote>
+<p>window.onload 方法会在当前页面加载完成之后触发</p>
+<p>获取元素的语句放在这个方法中执行，就可以正常获取了。</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    window.onload = function()&#123;</span><br><span class="line">        var oDiv = document.getElementById(&apos;div1&apos;);</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;这是一个div元素&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="6-操作元素属性"><a href="#6-操作元素属性" class="headerlink" title="6. 操作元素属性"></a>6. 操作元素属性</h2><blockquote>
+<p>获取的页面元素，就可以对页面元素的属性进行操作，属性的操作包括属性的读和写。</p>
+</blockquote>
+<p><strong>操作元素属性</strong> </p>
+<p>读取属性:</p>
+<blockquote>
+<p>var 变量 = 元素.属性名     </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&gt; JS部分:</span><br><span class="line">&gt; var oInput = document.getElementById(&apos;input1&apos;);</span><br><span class="line">&gt; var oA = document.getElementById(&apos;link1&apos;);</span><br><span class="line">&gt; // 读取属性值</span><br><span class="line">&gt; var sValue = oInput.value;</span><br><span class="line">&gt; var sType = oInput.type;</span><br><span class="line">&gt; var sName = oInput.name;</span><br><span class="line">&gt; var sLinks = oA.href;</span><br><span class="line">&gt; </span><br><span class="line">&gt; HTML部分:</span><br><span class="line">&gt; &lt;input type=&quot;text&quot; name=&quot;setsize&quot; id=&quot;input1&quot; value=&quot;20px&quot;&gt;</span><br><span class="line">&gt; &lt;a href=&quot;http://www.itcast.cn&quot; id=&quot;link1&quot;&gt;传智播客&lt;/a&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>改写属性:</p>
+<blockquote>
+<p>元素.属性名 = 新属性值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt; JS部分:</span><br><span class="line">&gt; var oA = document.getElementById(&apos;link1&apos;);</span><br><span class="line">&gt; // 写(设置)属性</span><br><span class="line">&gt; oA.style.color = &apos;red&apos;;</span><br><span class="line">&gt; oA.style.fontSize = sValue;</span><br><span class="line">&gt; </span><br><span class="line">&gt; HTML部分:</span><br><span class="line">&gt; &lt;a href=&quot;http://www.itcast.cn&quot;  id=&quot;link1&quot;&gt;传智播客&lt;/a&gt;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p><strong>如果在 JS 中获取 HTML 的相关属性, 有如下注意点:</strong></p>
+<ul>
+<li>如果能够在 HTML 页面正常看到的属性, 我们在 JS 中可以同名获取</li>
+<li>如果在 JS 中想要获取 HTML 元素的 class 属性, 我们需要使用 className 来获取</li>
+<li>对于 style 里面的属性, 如果使用 ‘-‘ 链接的, 我们要改成驼峰式, 例如:  font-size 改成: style.fontSize</li>
+</ul>
+<blockquote>
+<p>上面修改的是标签的属性, 如果我们想要通过 JS 修改标签中的文本内容, 应该怎样修改呢?</p>
+</blockquote>
+<p><strong>我们可以通过:  innerHTML 来进行修改:</strong> </p>
+<blockquote>
+<p>innerHTML 可以读取或者写入标签的文本部分</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">JS部分: </span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    window.onload = function()&#123;</span><br><span class="line">        var oDiv = document.getElementById(&apos;div1&apos;);</span><br><span class="line">        //读取</span><br><span class="line">        var sTxt = oDiv.innerHTML;</span><br><span class="line">        alert(sTxt);</span><br><span class="line">        //写入</span><br><span class="line">        oDiv.innerHTML = &apos;&lt;a href=&quot;http://www.itcast.cn&quot;&gt;传智播客&lt;a/&gt;&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;div1&quot;&gt;这是一个div元素&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="7-事件属性及匿名函数"><a href="#7-事件属性及匿名函数" class="headerlink" title="7. 事件属性及匿名函数"></a>7. 事件属性及匿名函数</h2><h3 id="1-事件属性"><a href="#1-事件属性" class="headerlink" title="1)   事件属性"></a>1)   事件属性</h3><blockquote>
+<p>标签上除了可以添加 样式, id, class等属性之外,  还可以添加事件属性.</p>
+</blockquote>
+<p>最常用的事件属性有: </p>
+<ul>
+<li>鼠标单击事件   onclick</li>
+<li>鼠标双击事件   ondblclick   (double)</li>
+<li>鼠标移入事件   onmouseover</li>
+<li>鼠标移除事件   onmouseout</li>
+</ul>
+<blockquote>
+<p>说明: 我们可以通过将函数名赋值给事件属性的形式, 将 事件 和 函数 关联起来</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    window.onload = function()&#123;</span><br><span class="line">    </span><br><span class="line">        var oBtn = document.getElementById(&apos;btn1&apos;);</span><br><span class="line">        oBtn.onclick = myalert;</span><br><span class="line"></span><br><span class="line">        function myalert()&#123;</span><br><span class="line">            alert(&apos;ok!&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="2-匿名函数"><a href="#2-匿名函数" class="headerlink" title="2)  匿名函数"></a>2)  匿名函数</h3><blockquote>
+<p>没有名字的函数, 称为匿名函数</p>
+<p>可以将匿名函数的定义直接赋值给元素的事件属性来完成事件和函数的关联，这样可以减少函数命名，并且简化代码。函数如果做公共函数，就可以写成匿名函数的形式。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">    window.onload = function()&#123;</span><br><span class="line">    </span><br><span class="line">    	// 正常的函数赋值调用</span><br><span class="line">        var oBtn = document.getElementById(&apos;btn1&apos;);</span><br><span class="line">        oBtn.onclick = myalert;</span><br><span class="line">        function myalert()&#123;</span><br><span class="line">            alert(&apos;ok!&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">       </span><br><span class="line">       // 匿名函数的使用</span><br><span class="line">        oBtn.onclick = function ()&#123;</span><br><span class="line">            alert(&apos;ok!&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>JavaScript-01</a></p>
+  <p><span>文章作者:</span>Zhyannan</a></p>
+  <p><span>发布时间:</span>2018年07月25日 - 12:19:22</p>
+  <p><span>最后更新:</span>2018年07月10日 - 16:18:51</p>
+  <p><span>原始链接:</span><a href="/2018/07/25/2016-7-25-JavaScript-01/" title="JavaScript-01">http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yannan Zhu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/" title="JavaScript-01">http://yoursite.com/2018/07/25/2016-7-25-JavaScript-01/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"># html</a>
+          
+            <a href="/tags/css/" rel="tag"># css</a>
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/23/2016-7-23-css定位/" rel="next" title="css定位">
+                <i class="fa fa-chevron-left"></i> css定位
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/26/2016-7-26-JavaScript-02/" rel="prev" title="JavaScript-02">
+                JavaScript-02 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzk0NS8xNDQ3NQ=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Zhyannan</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/Tags/index.html">
+                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Zhyannan" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:dustin.zyn@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                百度一下
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.baidu.com/" title="Baidu" target="_blank">Baidu</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript-介绍"><span class="nav-number">1.</span> <span class="nav-text">JavaScript 介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-HTML-引入-JavaScript-的方式"><span class="nav-number">1.1.</span> <span class="nav-text">1. HTML 引入 JavaScript 的方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-变量、数据类型及基本语法规范"><span class="nav-number">1.2.</span> <span class="nav-text">2. 变量、数据类型及基本语法规范</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-函数"><span class="nav-number">1.3.</span> <span class="nav-text">3.函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-函数定义与执行"><span class="nav-number">1.3.1.</span> <span class="nav-text">1. 函数定义与执行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-函数传参"><span class="nav-number">1.3.2.</span> <span class="nav-text">2. 函数传参</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-函数的返回值"><span class="nav-number">1.3.3.</span> <span class="nav-text">3. 函数的返回值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-条件语句"><span class="nav-number">1.4.</span> <span class="nav-text">4. 条件语句</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-条件运算符和逻辑运算符"><span class="nav-number">1.4.1.</span> <span class="nav-text">1) 条件运算符和逻辑运算符:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-条件语句表达式"><span class="nav-number">1.4.2.</span> <span class="nav-text">2)  条件语句表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-总结"><span class="nav-number">1.4.3.</span> <span class="nav-text">3)   总结:</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-获取元素方法"><span class="nav-number">1.5.</span> <span class="nav-text">5. 获取元素方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-操作元素属性"><span class="nav-number">1.6.</span> <span class="nav-text">6. 操作元素属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-事件属性及匿名函数"><span class="nav-number">1.7.</span> <span class="nav-text">7. 事件属性及匿名函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-事件属性"><span class="nav-number">1.7.1.</span> <span class="nav-text">1)   事件属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-匿名函数"><span class="nav-number">1.7.2.</span> <span class="nav-text">2)  匿名函数</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2016 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhyannan</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">23.9k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+<!-- 访问次数统计 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<style <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css"></style>
+
+&nbsp;&nbsp;Total view <span id="busuanzi_value_page_pv"><i class="fa fa-spinner" id='ii'></i></span> times
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="css,盒子模型," />
 
 
 
@@ -81,14 +81,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="About">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="1.CSS–内外边距 margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的  padding:  用于控制内容与边框之间的距离  border(边框):   围绕在内边距和内容外的边框  content(内容):  盒子的内容, 显示文本和图像.">
+<meta name="keywords" content="css,盒子模型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS盒子模型">
+<meta property="og:url" content="http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/index.html">
 <meta property="og:site_name" content="Zhyannan&#39;s blogs">
+<meta property="og:description" content="1.CSS–内外边距 margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的  padding:  用于控制内容与边框之间的距离  border(边框):   围绕在内边距和内容外的边框  content(内容):  盒子的内容, 显示文本和图像.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-09T16:25:45.977Z">
+<meta property="og:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E8%AF%BE%E4%BB%B6%E8%B5%84%E6%96%99/day02&day03/images/view01.jpg">
+<meta property="og:updated_time" content="2018-07-10T07:53:07.933Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About">
+<meta name="twitter:title" content="CSS盒子模型">
+<meta name="twitter:description" content="1.CSS–内外边距 margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的  padding:  用于控制内容与边框之间的距离  border(边框):   围绕在内边距和内容外的边框  content(内容):  盒子的内容, 显示文本和图像.">
+<meta name="twitter:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E8%AF%BE%E4%BB%B6%E8%B5%84%E6%96%99/day02&day03/images/view01.jpg">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/"/>
 
 
 
 
 
-  <title>About | Zhyannan's blogs</title>
+  <title>CSS盒子模型 | Zhyannan's blogs</title>
   
 
 
@@ -283,33 +289,334 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-categories" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhyannan">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhyannan's blogs">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">About</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">CSS盒子模型</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-10T15:43:52+08:00">
+                2018-07-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1,174
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="1-CSS–内外边距"><a href="#1-CSS–内外边距" class="headerlink" title="1.CSS–内外边距"></a>1.CSS–内外边距</h1><ul>
+<li><p>margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的</p>
+</li>
+<li><p>padding:  用于控制内容与边框之间的距离</p>
+</li>
+<li><p>border(边框):   围绕在内边距和内容外的边框</p>
+</li>
+<li><p>content(内容):  盒子的内容, 显示文本和图像.</p>
+<a id="more"></a>
+</li>
+</ul>
+<p>重要提示:  </p>
+<p>​    当你指定一个CSS元素的宽度和高度属性时, 你只是设置内容区域的宽度和高度.</p>
+<p>​    完全大小的元素, 你还必须加上内边距, 边框和外边距.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    .div1 &#123;</span></span><br><span class="line"><span class="undefined">        width: 100px;</span></span><br><span class="line"><span class="undefined">        height: 100px;</span></span><br><span class="line"><span class="undefined">        background-color: pink;</span></span><br><span class="line"><span class="undefined">        border: 40px solid blue;</span></span><br><span class="line"><span class="undefined">        padding: 40px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .div2 &#123;</span></span><br><span class="line"><span class="undefined">        width: 100px;</span></span><br><span class="line"><span class="undefined">        height: 100px;</span></span><br><span class="line"><span class="undefined">        background-color: lightblue;</span></span><br><span class="line"><span class="undefined">        border: 1px solid red;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>hello div1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>hello div222<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>如果上下两个元素都有设置相对的margin值, 则选择大的添加, 小的不添加.这个称谓margin兄弟塌陷</strong></p>
+<p><strong>margin父子塌陷问题: </strong></p>
+<ul>
+<li>如果父级 div 中没有 border,   padding,   inline content(文本), 子级 div 的 margin 会一直往上找,直到找到某个标签包括 border,  padding,   inline content(文本) 中的其中一个, 然后按此 div 进行 margin.</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">    .div1 &#123;</span></span><br><span class="line"><span class="undefined">        width:200px;</span></span><br><span class="line"><span class="undefined">        height:200px;</span></span><br><span class="line"><span class="undefined">        background-color: pink;</span></span><br><span class="line"><span class="undefined">        border: 20px solid red;</span></span><br><span class="line"><span class="undefined">        padding: 5px;</span></span><br><span class="line"><span class="undefined">        margin-bottom: 40px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .div2 &#123;</span></span><br><span class="line"><span class="undefined">        width:200px;</span></span><br><span class="line"><span class="undefined">        height:200px;</span></span><br><span class="line"><span class="undefined">        background-color: blue;</span></span><br><span class="line"><span class="undefined">        border: 20px solid red;</span></span><br><span class="line"><span class="undefined">        padding: 5px;</span></span><br><span class="line"><span class="undefined">        margin-top: 40px;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .outer &#123;</span></span><br><span class="line"><span class="undefined">        height: 1000px;</span></span><br><span class="line"><span class="undefined">        background-color: lightblue;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined">    .box &#123;</span></span><br><span class="line"><span class="undefined">        width:100px;</span></span><br><span class="line"><span class="undefined">        height:100px;</span></span><br><span class="line"><span class="undefined">        background-color: orange;</span></span><br><span class="line"><span class="undefined">    &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"outer"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div1"</span>&gt;</span>hello div1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"div2"</span>&gt;</span>hello div2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>补充说明: </p>
+<p>background-color 背景颜色</p>
+<p>background-image 背景图片</p>
+<p>background-repeat 背景重复</p>
+<p>我们可以对上面的代码进行合并书写: </p>
+<p>background: url(bgimg.gif)  no-repeat  5px  5px;</p>
+<h1 id="2-CSS盒子模型"><a href="#2-CSS盒子模型" class="headerlink" title="2.CSS盒子模型"></a>2.CSS盒子模型</h1><p><strong>盒子模型解释</strong> </p>
+<blockquote>
+<p>元素在页面中显示成一个方块，类似一个盒子，CSS盒子模型就是使用现实中盒子来做比喻，帮助我们设置元素对应的样式。盒子模型示意图如下：</p>
+</blockquote>
+<p><img src="G:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&amp;%E8%A7%86%E9%A2%91/%E8%AF%BE%E4%BB%B6%E8%B5%84%E6%96%99/day02&amp;day03/images/view01.jpg" alt="view01"></p>
+<blockquote>
+<p>把元素叫做盒子，设置对应的样式分别为：盒子的宽度(width)、盒子的高度(height)、盒子的边框(border)、盒子内的内容和边框之间的间距(padding)、盒子与盒子之间的间距(margin)。</p>
+</blockquote>
+<p><strong>设置宽高  width  height</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">width:200px;  /* 设置盒子的宽度，此宽度是指盒子内容的宽度，不是盒子整体宽度(难点) */ </span><br><span class="line">height:200px; /* 设置盒子的高度，此高度是指盒子内容的高度，不是盒子整体高度(难点) */</span><br></pre></td></tr></table></figure>
+<p><strong>设置边框</strong> border</p>
+<blockquote>
+<p>设置一边的边框，比如顶部边框，可以按如下设置：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">border-top:10px solid red;</span><br></pre></td></tr></table></figure>
+<p>其中10px表示线框的粗细；solid表示线性。</p>
+<p>设置其它三个边的方法和上面一样，把上面的’top’换成’left’就是设置左边，换成’right’就是设置右边，换成’bottom’就是设置底边。</p>
+<p>四个边如果设置一样，可以将四个边的设置合并成一句：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">border:10px solid red;</span><br></pre></td></tr></table></figure>
+<p><strong>设置内间距  padding</strong></p>
+<p>设置盒子四边的内间距，可设置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">padding-top：20px;     /* 设置顶部内间距20px */ </span><br><span class="line">padding-left:30px;     /* 设置左边内间距30px */ </span><br><span class="line">padding-right:40px;    /* 设置右边内间距40px */ </span><br><span class="line">padding-bottom:50px;   /* 设置底部内间距50px */</span><br></pre></td></tr></table></figure>
+<p>上面的设置可以简写如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* 四个值按照顺时针方向，分别设置的是 上 右 下 左  四个方向的内边距值。 */</span><br><span class="line">padding：20px 40px 50px 30px;</span><br></pre></td></tr></table></figure>
+<p>padding后面还可以跟3个值，2个值和1个值，它们分别设置的项目如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">padding：20px 40px 50px; /* 设置顶部内边距为20px，左右内边距为40px，底部内边距为50px */ </span><br><span class="line">padding：20px 40px; /* 设置上下内边距为20px，左右内边距为40px*/ </span><br><span class="line">padding：20px; /* 设置四边内边距为20px */</span><br></pre></td></tr></table></figure>
+<p><strong>设置外间距margin</strong><br>外边距的设置方法和padding的设置方法相同，将上面设置项中的’padding’换成’margin’就是外边距设置方法。</p>
+<p><strong>外间距居中技巧</strong><br>如果子元素是块元素，且它的宽度小于父元素，可以将子元素左右设置auto来水平居中子元素</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/* 子元素上下外边距设为0，左右设置为auto */</span><br><span class="line">margin:0px auto;</span><br></pre></td></tr></table></figure>
+<p><strong>盒子的真实尺寸</strong><br>盒子的width和height值固定时，如果盒子增加border和padding，盒子整体的尺寸会变大，所以盒子的真实尺寸为：</p>
+<ul>
+<li>盒子宽度 = width + padding左右 + border左右</li>
+<li>盒子高度 = height + padding上下 + border上下</li>
+</ul>
+
       
     </div>
     
     
     
+
+    <div>
+      
+        
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
+  <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
+
+  <p><span>本文标题:</span>CSS盒子模型</a></p>
+  <p><span>文章作者:</span>Zhyannan</a></p>
+  <p><span>发布时间:</span>2018年07月10日 - 15:43:52</p>
+  <p><span>最后更新:</span>2018年07月10日 - 15:53:07</p>
+  <p><span>原始链接:</span><a href="/2018/07/10/2016-7-21-CSS盒子模型/" title="CSS盒子模型">http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    clipboard.on('success', $(function(){
+      $(".fa-clipboard").click(function(){
+        swal({   
+          title: "",   
+          text: '复制成功',   
+          html: false,
+          timer: 500,   
+          showConfirmButton: false
+        });
+      });
+    }));  
+</script>
+
+      
+    </div>
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    Yannan Zhu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/" title="CSS盒子模型">http://yoursite.com/2018/07/10/2016-7-21-CSS盒子模型/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/css/" rel="tag"># css</a>
+          
+            <a href="/tags/盒子模型/" rel="tag"># 盒子模型</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/21/2016-7-20-css-02/" rel="next" title="CSS-进阶">
+                <i class="fa fa-chevron-left"></i> CSS-进阶
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/22/2016-7-22-HTML列表-表单-表格/" rel="prev" title="HTML列表&表单&表格">
+                HTML列表&表单&表格 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -347,8 +654,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -445,6 +761,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-CSS–内外边距"><span class="nav-number">1.</span> <span class="nav-text">1.CSS–内外边距</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-CSS盒子模型"><span class="nav-number">2.</span> <span class="nav-text">2.CSS盒子模型</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
