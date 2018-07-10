@@ -187,6 +187,36 @@
   </entry>
   
   <entry>
+    <title>CSS简明教程（三）</title>
+    <link href="https://zhyannan.github.io/2016/07/21/2016-7-21-CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://zhyannan.github.io/2016/07/21/2016-7-21-CSS盒子模型/</id>
+    <published>2016-07-21T07:43:52.000Z</published>
+    <updated>2018-07-10T14:43:19.677Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;本章介绍css内外边距的定义，并引入盒子模型的概念&lt;/p&gt;
+&lt;h1 id=&quot;1-CSS–内外边距&quot;&gt;&lt;a href=&quot;#1-CSS–内外边距&quot; class=&quot;headerlink&quot; title=&quot;1.CSS–内外边距&quot;&gt;&lt;/a&gt;1.CSS–内外边距&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;padding:  用于控制内容与边框之间的距离&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;border(边框):   围绕在内边距和内容外的边框&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;content(内容):  盒子的内容, 显示文本和图像.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端 - 盒子模型 - css" scheme="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B-css/"/>
+    
+    
+      <category term="css" scheme="https://zhyannan.github.io/tags/css/"/>
+    
+      <category term="盒子模型" scheme="https://zhyannan.github.io/tags/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>css简明教程（二）</title>
     <link href="https://zhyannan.github.io/2016/07/20/2016-7-20-css%E4%B8%8B/"/>
     <id>https://zhyannan.github.io/2016/07/20/2016-7-20-css下/</id>
@@ -281,36 +311,6 @@
     
     
       <category term="css" scheme="https://zhyannan.github.io/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CSS简明教程（三）</title>
-    <link href="https://zhyannan.github.io/2016/07/10/2016-7-21-CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
-    <id>https://zhyannan.github.io/2016/07/10/2016-7-21-CSS盒子模型/</id>
-    <published>2016-07-10T07:43:52.000Z</published>
-    <updated>2018-07-10T14:06:15.584Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;本章介绍css内外边距的定义，并引入盒子模型的概念&lt;/p&gt;
-&lt;h1 id=&quot;1-CSS–内外边距&quot;&gt;&lt;a href=&quot;#1-CSS–内外边距&quot; class=&quot;headerlink&quot; title=&quot;1.CSS–内外边距&quot;&gt;&lt;/a&gt;1.CSS–内外边距&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;padding:  用于控制内容与边框之间的距离&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;border(边框):   围绕在内边距和内容外的边框&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;content(内容):  盒子的内容, 显示文本和图像.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="前端 - 盒子模型 - css" scheme="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B-css/"/>
-    
-    
-      <category term="css" scheme="https://zhyannan.github.io/tags/css/"/>
-    
-      <category term="盒子模型" scheme="https://zhyannan.github.io/tags/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
     
   </entry>
   
