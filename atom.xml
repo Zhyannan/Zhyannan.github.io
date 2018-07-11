@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhyannan.github.io/"/>
-  <updated>2018-07-10T14:14:26.099Z</updated>
+  <updated>2018-07-11T14:59:29.749Z</updated>
   <id>https://zhyannan.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jquery简明教程（二）</title>
+    <link href="https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/"/>
+    <id>https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/</id>
+    <published>2016-08-05T13:54:44.000Z</published>
+    <updated>2018-07-11T14:59:29.749Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#概述&lt;/p&gt;
+&lt;p&gt;​    本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；&lt;/p&gt;
+&lt;p&gt;使用正则表达式完成表单的验证。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端 - jquery" scheme="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-jquery/"/>
+    
+    
+      <category term="jquery" scheme="https://zhyannan.github.io/Tags/jquery/"/>
+    
+      <category term="js" scheme="https://zhyannan.github.io/Tags/js/"/>
+    
+      <category term="jquery事件" scheme="https://zhyannan.github.io/Tags/jquery%E4%BA%8B%E4%BB%B6/"/>
+    
+      <category term="jquery动画" scheme="https://zhyannan.github.io/Tags/jquery%E5%8A%A8%E7%94%BB/"/>
+    
+      <category term="jquery正则" scheme="https://zhyannan.github.io/Tags/jquery%E6%AD%A3%E5%88%99/"/>
+    
+  </entry>
   
   <entry>
     <title>Jquery简明教程（一）</title>
