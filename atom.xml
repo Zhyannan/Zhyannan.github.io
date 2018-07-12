@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhyannan.github.io/"/>
-  <updated>2018-07-11T14:59:29.749Z</updated>
+  <updated>2018-07-12T14:47:31.363Z</updated>
   <id>https://zhyannan.github.io/</id>
   
   <author>
@@ -21,13 +21,13 @@
     <link href="https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/"/>
     <id>https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/</id>
     <published>2016-08-05T13:54:44.000Z</published>
-    <updated>2018-07-11T14:59:29.749Z</updated>
+    <updated>2018-07-12T14:47:31.363Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;#概述&lt;/p&gt;
-&lt;p&gt;​    本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；&lt;/p&gt;
-&lt;p&gt;使用正则表达式完成表单的验证。&lt;/p&gt;
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；&lt;br&gt;animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；&lt;br&gt;使用正则表达式完成表单的验证。&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -110,11 +110,13 @@
     <link href="https://zhyannan.github.io/2016/07/25/2016-7-25-JavaScript-01/"/>
     <id>https://zhyannan.github.io/2016/07/25/2016-7-25-JavaScript-01/</id>
     <published>2016-07-25T04:19:22.000Z</published>
-    <updated>2018-07-10T14:09:24.485Z</updated>
+    <updated>2018-07-12T14:45:25.927Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;JavaScript-概述&quot;&gt;&lt;a href=&quot;#JavaScript-概述&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 概述&quot;&gt;&lt;/a&gt;JavaScript 概述&lt;/h1&gt;&lt;p&gt;JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。&lt;/p&gt;
+      &lt;h1 id=&quot;JavaScript-概述&quot;&gt;&lt;a href=&quot;#JavaScript-概述&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 概述&quot;&gt;&lt;/a&gt;JavaScript 概述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;JavaScript 是运行在浏览器端的脚步语言，JavaScript 主要解决的是前端与用户交互的问题，包括使用交互与数据交互。 JavaScript是浏览器解释执行的，前端脚本语言还有JScript（微软，IE独有），ActionScript( Adobe公司，需要插件)等。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;前端三大块&lt;/strong&gt;&lt;br&gt;1、HTML：页面结构&lt;br&gt;2、CSS：页面表现：元素大小、颜色、位置、隐藏或显示、部分动画效果&lt;br&gt;3、JavaScript：页面行为：部分动画效果、页面与用户的交互、页面功能&lt;/p&gt;
     
     </summary>
@@ -197,11 +199,13 @@
     <link href="https://zhyannan.github.io/2016/07/22/2016-7-22-HTML%E5%88%97%E8%A1%A8-%E8%A1%A8%E5%8D%95-%E8%A1%A8%E6%A0%BC/"/>
     <id>https://zhyannan.github.io/2016/07/22/2016-7-22-HTML列表-表单-表格/</id>
     <published>2016-07-22T07:54:35.000Z</published>
-    <updated>2018-07-10T14:06:06.394Z</updated>
+    <updated>2018-07-12T14:46:50.656Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;​    我们在写页面的时候经常会使用列表标签，用来布局文章的标题列表、菜单等，在前端页面中, 往往用表单来制作用户的注册, 登录等功能，本章会讲解列表标签和表单标签的简单如何，以及相关样式&lt;/p&gt;
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;我们在写页面的时候经常会使用列表标签，用来布局文章的标题列表、菜单等，在前端页面中, 往往用表单来制作用户的注册, 登录等功能，本章会讲解列表标签和表单标签的简单如何，以及相关样式&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -221,11 +225,13 @@
     <link href="https://zhyannan.github.io/2016/07/21/2016-7-21-CSS%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
     <id>https://zhyannan.github.io/2016/07/21/2016-7-21-CSS盒子模型/</id>
     <published>2016-07-21T07:43:52.000Z</published>
-    <updated>2018-07-11T03:43:23.446Z</updated>
+    <updated>2018-07-12T14:45:47.838Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;p&gt;本章介绍css内外边距的定义，并引入盒子模型的概念&lt;/p&gt;
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本章介绍css内外边距的定义，并引入盒子模型的概念&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h1 id=&quot;1-CSS–内外边距&quot;&gt;&lt;a href=&quot;#1-CSS–内外边距&quot; class=&quot;headerlink&quot; title=&quot;1.CSS–内外边距&quot;&gt;&lt;/a&gt;1.CSS–内外边距&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;margin:  用于控制元素与元素之间的距离, margin的最基本用途就是控制元素周围空间的间隔,从视觉角度上达到互相隔开的目的&lt;/p&gt;
 &lt;/li&gt;
@@ -251,11 +257,11 @@
     <link href="https://zhyannan.github.io/2016/07/20/2016-7-20-css%E4%B8%8B/"/>
     <id>https://zhyannan.github.io/2016/07/20/2016-7-20-css下/</id>
     <published>2016-07-20T13:50:44.000Z</published>
-    <updated>2018-07-11T03:43:17.202Z</updated>
+    <updated>2018-07-12T14:46:02.806Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;​    本章将介绍CSS 布局、文本常用的一些属性，以及float属性，还有一个简单的布局案例演示&lt;/p&gt;
+      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;​&amp;gt; 本章将介绍CSS 布局、文本常用的一些属性，以及float属性，还有一个简单的布局案例演示&lt;/p&gt;
     
     </summary>
     
@@ -304,11 +310,13 @@
     <link href="https://zhyannan.github.io/2016/07/19/2016-7-19-html/"/>
     <id>https://zhyannan.github.io/2016/07/19/2016-7-19-html/</id>
     <published>2016-07-19T13:39:46.000Z</published>
-    <updated>2018-07-10T13:21:11.088Z</updated>
+    <updated>2018-07-12T14:46:09.460Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;什么是前端&quot;&gt;&lt;a href=&quot;#什么是前端&quot; class=&quot;headerlink&quot; title=&quot;什么是前端&quot;&gt;&lt;/a&gt;什么是前端&lt;/h2&gt;&lt;p&gt;前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，HTML5，CSS3，前端框架的应用，跨平台响应式网页设计能够适应各种屏幕分辨率，完美的动效设计，给用户带来极高的用户体验。 &lt;/p&gt;
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;h2 id=&quot;什么是前端&quot;&gt;&lt;a href=&quot;#什么是前端&quot; class=&quot;headerlink&quot; title=&quot;什么是前端&quot;&gt;&lt;/a&gt;什么是前端&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，HTML5，CSS3，前端框架的应用，跨平台响应式网页设计能够适应各种屏幕分辨率，完美的动效设计，给用户带来极高的用户体验。 &lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
@@ -326,11 +334,13 @@
     <link href="https://zhyannan.github.io/2016/07/12/2016-7-12-demo/"/>
     <id>https://zhyannan.github.io/2016/07/12/2016-7-12-demo/</id>
     <published>2016-07-12T02:34:12.000Z</published>
-    <updated>2018-07-11T15:40:26.138Z</updated>
+    <updated>2018-07-12T14:48:14.118Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。&lt;/p&gt;
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;自从可以使用 Map 之后，开发者们开始毫无顾忌地定义 Map 存储数据，比如断点宽度、颜色值、栅格布局等等响应式排版的细节，都被一股脑的塞进了 Map 中。&lt;/p&gt;
     
     </summary>

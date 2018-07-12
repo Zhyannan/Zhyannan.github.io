@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="概述如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。 自从可以使用 Map 之后，开发者们开">
+<meta name="description" content="概述 如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。  自从可以使用 Map 之后，开发者">
 <meta name="keywords" content="css,前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="辨析 Sass 中的 Map 和 List">
 <meta property="og:url" content="https://zhyannan.github.io/2016/07/12/2016-7-12-demo/index.html">
 <meta property="og:site_name" content="Zhyannan&#39;s blogs">
-<meta property="og:description" content="概述如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。 自从可以使用 Map 之后，开发者们开">
+<meta property="og:description" content="概述 如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。  自从可以使用 Map 之后，开发者">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-11T15:40:26.138Z">
+<meta property="og:updated_time" content="2018-07-12T14:48:14.118Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辨析 Sass 中的 Map 和 List">
-<meta name="twitter:description" content="概述如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。 自从可以使用 Map 之后，开发者们开">
+<meta name="twitter:description" content="概述 如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。  自从可以使用 Map 之后，开发者">
 
 
 
@@ -171,7 +171,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">不忘初心</p>
+        <h1 class="site-subtitle" itemprop="description">不忘初心</h1>
       
   </div>
 
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">辨析 Sass 中的 Map 和 List</h1>
+          <h2 class="post-title" itemprop="name headline">辨析 Sass 中的 Map 和 List</h2>
         
 
         <div class="post-meta">
@@ -444,7 +444,9 @@
       
 
       
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。</p>
+        <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><blockquote>
+<p>如果你使用过 Sass 3.3 之前的版本，那么你一定对那段时光颇有感触，那时候没有现如今这么好的条件，那时候的 Map 还只能用多重列表（lists of list）来模拟。多重列表可以实现复杂数据的嵌套定义，但却不是以键值对的形式实现的，所有当我们需要获取其中特定的某一项时就会比较麻烦。Map 这种数据类型天生就是基于键值对的形式，非常便于组织数据。</p>
+</blockquote>
 <p>自从可以使用 Map 之后，开发者们开始毫无顾忌地定义 Map 存储数据，比如断点宽度、颜色值、栅格布局等等响应式排版的细节，都被一股脑的塞进了 Map 中。</p>
 <a id="more"></a>
 <p>那么，有了 Map 之后，我们还有必要使用 List 吗？可能某些人会觉得为了保持向后兼容应该继续使用多重列表模拟 Map，因为可能有些开发者仍然在使用老版本的 Sass 编译器，但实际上，这是多此一举了，Sass 的版本通常由 <code>package.json</code> 或者其他同类型的项目配置文件所控制，往往只需一条命令（<code>gem update sass</code>）即可更新 Sass 的版本，因此基本上无需考虑对老版本的兼容问题。</p>
@@ -711,7 +713,7 @@
                 alt="Zhyannan" />
             
               <p class="site-author-name" itemprop="name">Zhyannan</p>
-              <p class="site-description motion-element" itemprop="description">想而奋进的过程，其意义远大于未知的结果。</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           <nav class="site-state motion-element">
@@ -791,7 +793,7 @@
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.baidu.com/" title="Baidu" target="_blank">Baidu</a>
+                    <a href="http://www.baidu.com/" title="Baidu" target="_blank" rel="external nofollow">Baidu</a>
                   </li>
                 
               </ul>
@@ -813,7 +815,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试表格"><span class="nav-text">测试表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法比较"><span class="nav-text">语法比较</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">测试标题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Map-语法"><span class="nav-text">Map 语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多重列表语法"><span class="nav-text">多重列表语法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遍历比较"><span class="nav-text">遍历比较</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">测试标题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遍历-Map"><span class="nav-text">遍历 Map</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遍历多重列表"><span class="nav-text">遍历多重列表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#慎用多重列表"><span class="nav-text">慎用多重列表</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">测试标题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗漏键值"><span class="nav-text">遗漏键值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查找特定列表"><span class="nav-text">查找特定列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缺少原生的-Map-函数"><span class="nav-text">缺少原生的 Map 函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">Test Title</span></a></li></ol></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#概述"><span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试表格"><span class="nav-text">测试表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语法比较"><span class="nav-text">语法比较</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">测试标题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Map-语法"><span class="nav-text">Map 语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多重列表语法"><span class="nav-text">多重列表语法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#遍历比较"><span class="nav-text">遍历比较</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">测试标题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遍历-Map"><span class="nav-text">遍历 Map</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遍历多重列表"><span class="nav-text">遍历多重列表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#慎用多重列表"><span class="nav-text">慎用多重列表</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">测试标题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗漏键值"><span class="nav-text">遗漏键值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查找特定列表"><span class="nav-text">查找特定列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#缺少原生的-Map-函数"><span class="nav-text">缺少原生的 Map 函数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-text">Test Title</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -854,7 +856,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io" rel="external nofollow">Hexo</a> 强力驱动</div>
 
 
 
@@ -862,7 +864,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">NexT.Pisces</a> v5.1.4</div>
 
 
 
