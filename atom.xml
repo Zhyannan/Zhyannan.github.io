@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhyannan.github.io/"/>
-  <updated>2018-07-12T15:09:52.705Z</updated>
+  <updated>2018-07-13T14:09:24.203Z</updated>
   <id>https://zhyannan.github.io/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jquery简明教程（三）</title>
+    <link href="https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/"/>
+    <id>https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/</id>
+    <published>2016-08-10T13:59:34.000Z</published>
+    <updated>2018-07-13T14:09:24.203Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本章会介绍：&lt;/p&gt;
+&lt;p&gt;1.事件冒泡的原理及用法&lt;/p&gt;
+&lt;p&gt;2.事件委托&lt;/p&gt;
+&lt;p&gt;3.什么是Dom？Dom的操作&lt;/p&gt;
+&lt;p&gt;4.Js对象的创建&lt;/p&gt;
+&lt;p&gt;5.Json的介绍&lt;/p&gt;
+&lt;p&gt;6.ajax&amp;amp;Jsonp技术的介绍及应用&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="jquery事件冒泡" scheme="https://zhyannan.github.io/Tags/jquery%E4%BA%8B%E4%BB%B6%E5%86%92%E6%B3%A1/"/>
+    
+      <category term="jquery事件委托" scheme="https://zhyannan.github.io/Tags/jquery%E4%BA%8B%E4%BB%B6%E5%A7%94%E6%89%98/"/>
+    
+      <category term="Dom操作" scheme="https://zhyannan.github.io/Tags/Dom%E6%93%8D%E4%BD%9C/"/>
+    
+      <category term="js对象" scheme="https://zhyannan.github.io/Tags/js%E5%AF%B9%E8%B1%A1/"/>
+    
+      <category term="Json" scheme="https://zhyannan.github.io/Tags/Json/"/>
+    
+      <category term="ajax&amp;Jsonp" scheme="https://zhyannan.github.io/Tags/ajax-Jsonp/"/>
+    
+  </entry>
   
   <entry>
     <title>Jquery简明教程（二）</title>
