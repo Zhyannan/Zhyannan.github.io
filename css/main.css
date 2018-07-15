@@ -1998,7 +1998,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c25dff;
+  background: #deffdd;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2980,7 +2980,7 @@ header.post-header {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
-    width: 90% !important;
+    width: 100% !important;
   }
 }
 @media (max-width: 767px) {
