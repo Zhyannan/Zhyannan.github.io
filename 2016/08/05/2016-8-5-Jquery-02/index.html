@@ -83,13 +83,13 @@
 
 
 
-<meta name="description" content="概述 本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；使用正则表达式完成表单的验证。">
+<meta name="description" content="概述   本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；使用正则表达式完成表单的验证。">
 <meta name="keywords" content="js,jquery,jquery事件,jquery动画,jquery正则">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jquery简明教程（二）">
 <meta property="og:url" content="https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/index.html">
 <meta property="og:site_name" content="Zhyannan&#39;s blogs">
-<meta property="og:description" content="概述 本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；使用正则表达式完成表单的验证。">
+<meta property="og:description" content="概述   本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；使用正则表达式完成表单的验证。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E6%AF%8F%E6%97%A5%E8%A7%86%E9%A2%91&%E8%B5%84%E6%96%99/day-07/%E8%B5%84%E6%BA%90/day06&day07/images/QQ%E6%88%AA%E5%9B%BE20180528114507.png">
 <meta property="og:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E6%AF%8F%E6%97%A5%E8%A7%86%E9%A2%91&%E8%B5%84%E6%96%99/day-07/%E8%B5%84%E6%BA%90/day06&day07/images/QQ%E6%88%AA%E5%9B%BE20180528115712.png">
@@ -106,10 +106,10 @@
 <meta property="og:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E6%AF%8F%E6%97%A5%E8%A7%86%E9%A2%91&%E8%B5%84%E6%96%99/day-07/%E8%B5%84%E6%BA%90/day06&day07/images/18.gif">
 <meta property="og:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E6%AF%8F%E6%97%A5%E8%A7%86%E9%A2%91&%E8%B5%84%E6%96%99/day-07/%E8%B5%84%E6%BA%90/day06&day07/images/19.gif">
 <meta property="og:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E6%AF%8F%E6%97%A5%E8%A7%86%E9%A2%91&%E8%B5%84%E6%96%99/day-07/%E8%B5%84%E6%BA%90/day06&day07/images/QQ%E6%88%AA%E5%9B%BE20180604222010.png">
-<meta property="og:updated_time" content="2018-07-12T15:09:52.705Z">
+<meta property="og:updated_time" content="2018-07-15T16:05:54.583Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jquery简明教程（二）">
-<meta name="twitter:description" content="概述 本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；使用正则表达式完成表单的验证。">
+<meta name="twitter:description" content="概述   本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&amp;gt;的是: 不用’on’开头；animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；使用正则表达式完成表单的验证。">
 <meta name="twitter:image" content="g:/14%E6%9C%9Fpython%E5%B0%B1%E4%B8%9A%E7%8F%AD/02%E7%AC%AC%E4%BA%8C%E9%98%B6%E6%AE%B5_%E5%89%8D%E7%AB%AF/00%E8%AF%BE%E4%BB%B6&%E8%A7%86%E9%A2%91/%E6%AF%8F%E6%97%A5%E8%A7%86%E9%A2%91&%E8%B5%84%E6%96%99/day-07/%E8%B5%84%E6%BA%90/day06&day07/images/QQ%E6%88%AA%E5%9B%BE20180528114507.png">
 
 
@@ -461,7 +461,7 @@
 
       
         <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><blockquote>
-<p>本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&gt;的是: 不用’on’开头；<br>animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；<br>使用正则表达式完成表单的验证。</p>
+<p>  本章会介绍jquery事件的用法，我们想要给当前元素添加事件, 只需要选中当前元素, 这里调用 click 即可, 和原生 js 不同&gt;的是: 不用’on’开头；<br>animate的用法，以及一些动画效果；jquery三个属性操作方法，html()，val()，prop()的使用；<br>使用正则表达式完成表单的验证。</p>
 </blockquote>
 <a id="more"></a>
 <h2 id="一-绑定事件"><a href="#一-绑定事件" class="headerlink" title="一. 绑定事件"></a>一. 绑定事件</h2><blockquote>
@@ -864,12 +864,16 @@
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                百度一下
+                友情链接
               </div>
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
                     <a href="http://www.baidu.com/" title="Baidu" target="_blank" rel="external nofollow">Baidu</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.zhihu.com/" title="zhihu" target="_blank" rel="external nofollow">zhihu</a>
                   </li>
                 
               </ul>
@@ -1019,13 +1023,14 @@
   
 
 
+
+
+
+
+
+
   
-
-
-
-
-
-
+  
 
 
 
@@ -1063,7 +1068,12 @@
 
   
   
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_sphere.min.js"></script>
   
 
 
@@ -1623,6 +1633,8 @@
   
 
   
+  
+
 
   
 
