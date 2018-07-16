@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhyannan.github.io/"/>
-  <updated>2018-07-15T16:05:19.709Z</updated>
+  <updated>2018-07-16T11:42:03.253Z</updated>
   <id>https://zhyannan.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/"/>
     <id>https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/</id>
     <published>2016-08-10T13:59:34.000Z</published>
-    <updated>2018-07-15T16:05:19.709Z</updated>
+    <updated>2018-07-16T11:42:03.253Z</updated>
     
     <summary type="html">
     
@@ -51,7 +51,7 @@
     <link href="https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/"/>
     <id>https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/</id>
     <published>2016-08-05T13:54:44.000Z</published>
-    <updated>2018-07-15T16:05:54.583Z</updated>
+    <updated>2018-07-16T11:42:19.533Z</updated>
     
     <summary type="html">
     
@@ -204,7 +204,7 @@
       &lt;h1 id=&quot;CSS属性进阶&quot;&gt;&lt;a href=&quot;#CSS属性进阶&quot; class=&quot;headerlink&quot; title=&quot;CSS属性进阶&quot;&gt;&lt;/a&gt;CSS属性进阶&lt;/h1&gt;&lt;h2 id=&quot;1-文本常用样式属性进阶：&quot;&gt;&lt;a href=&quot;#1-文本常用样式属性进阶：&quot; class=&quot;headerlink&quot; title=&quot;1.文本常用样式属性进阶：&quot;&gt;&lt;/a&gt;1.文本常用样式属性进阶：&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;text-align 设置文字水平对齐方式，如text-align:center 设置文字水平居中&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;text-indent 设置文字首行缩进，如：text-indent:32px; 设置文字首行缩进32px&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;text-indent 设置文字首行缩进，如：text-indent:32px; 设置文字首行缩进32px&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
@@ -239,9 +239,9 @@
       <category term="前端 - html" scheme="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-html/"/>
     
     
-      <category term="csss" scheme="https://zhyannan.github.io/Tags/csss/"/>
-    
       <category term="html" scheme="https://zhyannan.github.io/Tags/html/"/>
+    
+      <category term="csss" scheme="https://zhyannan.github.io/Tags/csss/"/>
     
       <category term="li、form、table标签" scheme="https://zhyannan.github.io/Tags/li%E3%80%81form%E3%80%81table%E6%A0%87%E7%AD%BE/"/>
     
@@ -266,7 +266,7 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;border(边框):   围绕在内边距和内容外的边框&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;content(内容):  盒子的内容, 显示文本和图像.&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;content(内容):  盒子的内容, 显示文本和图像.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     

@@ -4,6 +4,61 @@
 
     
   <url>
+    <loc>https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/</loc>
+    <lastmod>2018-07-16T11:42:19.533Z</lastmod>
+    <data>
+        <display>
+        <title>Jquery简明教程（二）</title>
+        <pubTime>2016-08-05T13:54:44.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>jquery</tag>
+         
+        <tag>jquery事件</tag>
+         
+        <tag>jquery动画</tag>
+         
+        <tag>jquery正则</tag>
+         
+         
+           
+             
+              <breadCrumb title="前端 - jquery" url="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-jquery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/</loc>
+    <lastmod>2018-07-16T11:42:03.253Z</lastmod>
+    <data>
+        <display>
+        <title>Jquery简明教程（三）</title>
+        <pubTime>2016-08-10T13:59:34.000Z</pubTime>
+        
+        <tag>jquery事件冒泡</tag>
+         
+        <tag>jquery事件委托</tag>
+         
+        <tag>Dom操作</tag>
+         
+        <tag>js对象</tag>
+         
+        <tag>Json</tag>
+         
+        <tag>ajax&amp;Jsonp</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://zhyannan.github.io/2016/07/12/2016-7-12-demo/</loc>
     <lastmod>2018-07-15T16:08:15.497Z</lastmod>
     <data>
@@ -125,9 +180,9 @@
         <title>HTML列表&表单&表格</title>
         <pubTime>2016-07-22T07:54:35.000Z</pubTime>
         
-        <tag>csss</tag>
-         
         <tag>html</tag>
+         
+        <tag>csss</tag>
          
         <tag>li、form、table标签</tag>
          
@@ -242,61 +297,6 @@
              
               <breadCrumb title="前端 - js - jquery" url="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-js-jquery/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/</loc>
-    <lastmod>2018-07-15T16:05:54.583Z</lastmod>
-    <data>
-        <display>
-        <title>Jquery简明教程（二）</title>
-        <pubTime>2016-08-05T13:54:44.000Z</pubTime>
-        
-        <tag>js</tag>
-         
-        <tag>jquery</tag>
-         
-        <tag>jquery事件</tag>
-         
-        <tag>jquery动画</tag>
-         
-        <tag>jquery正则</tag>
-         
-         
-           
-             
-              <breadCrumb title="前端 - jquery" url="https://zhyannan.github.io/categories/%E5%89%8D%E7%AB%AF-jquery/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/</loc>
-    <lastmod>2018-07-15T16:05:19.709Z</lastmod>
-    <data>
-        <display>
-        <title>Jquery简明教程（三）</title>
-        <pubTime>2016-08-10T13:59:34.000Z</pubTime>
-        
-        <tag>jquery事件冒泡</tag>
-         
-        <tag>jquery事件委托</tag>
-         
-        <tag>Dom操作</tag>
-         
-        <tag>js对象</tag>
-         
-        <tag>Json</tag>
-         
-        <tag>ajax&amp;Jsonp</tag>
-         
-         
-           
         </display>
     </data>
     </url>
