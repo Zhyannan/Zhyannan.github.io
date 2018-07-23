@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zhyannan.github.io/"/>
-  <updated>2018-07-16T11:42:03.253Z</updated>
+  <updated>2018-07-23T14:25:24.521Z</updated>
   <id>https://zhyannan.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Jquery简明教程（三）</title>
+    <title>flask小案例</title>
+    <link href="https://zhyannan.github.io/2017/05/04/2017-5-4-flask-library/"/>
+    <id>https://zhyannan.github.io/2017/05/04/2017-5-4-flask-library/</id>
+    <published>2017-05-04T12:24:08.000Z</published>
+    <updated>2018-07-23T14:25:24.521Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Flask诞生于2010年，是Armin ronacher（人名）用 Python 语言基于 Werkzeug 工具箱编写的轻量级Web开发框架。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Flask 本身相当于一个内核，其他几乎所有的功能都要用到扩展（邮件扩展Flask-Mail，用户认证Flask-Login，数据库Flask-SQLAlchemy），都需要用第三方的扩展来实现。比如可以用 Flask 扩展加入ORM、窗体验证工具，文件上传、身份验证等。Flask 没有默认使用的数据库，你可以选择 MySQL，也可以用 NoSQL。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其 WSGI 工具箱采用 Werkzeug（路由模块），模板引擎则使用 Jinja2。这两个也是 Flask 框架的核心。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h6 id=&quot;本文将利用flask结合mysql数据库写一个前后端交互的简单的书籍管理系统的小案例&quot;&gt;&lt;a href=&quot;#本文将利用flask结合mysql数据库写一个前后端交互的简单的书籍管理系统的小案例&quot; class=&quot;headerlink&quot; title=&quot;本文将利用flask结合mysql数据库写一个前后端交互的简单的书籍管理系统的小案例&quot;&gt;&lt;/a&gt;本文将利用flask结合mysql数据库写一个前后端交互的简单的书籍管理系统的小案例&lt;/h6&gt;
+    
+    </summary>
+    
+      <category term="flask" scheme="https://zhyannan.github.io/categories/flask/"/>
+    
+    
+      <category term="flask" scheme="https://zhyannan.github.io/Tags/flask/"/>
+    
+      <category term="flask小案例" scheme="https://zhyannan.github.io/Tags/flask%E5%B0%8F%E6%A1%88%E4%BE%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jquery入门（三）</title>
     <link href="https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/"/>
     <id>https://zhyannan.github.io/2016/08/10/2016-8-10-Jquery-03/</id>
     <published>2016-08-10T13:59:34.000Z</published>
-    <updated>2018-07-16T11:42:03.253Z</updated>
+    <updated>2018-07-23T14:27:54.941Z</updated>
     
     <summary type="html">
     
@@ -47,11 +78,11 @@
   </entry>
   
   <entry>
-    <title>Jquery简明教程（二）</title>
+    <title>Jquery入门（二）</title>
     <link href="https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/"/>
     <id>https://zhyannan.github.io/2016/08/05/2016-8-5-Jquery-02/</id>
     <published>2016-08-05T13:54:44.000Z</published>
-    <updated>2018-07-16T11:42:19.533Z</updated>
+    <updated>2018-07-23T14:29:20.684Z</updated>
     
     <summary type="html">
     
